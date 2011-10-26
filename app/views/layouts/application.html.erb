@@ -14,10 +14,18 @@
 
     <div class="container">
       <header>
-        <%= image_tag("photobot.png", :alt => "PhotoBot2000", :class => "round") %>
-        <h1> PHOTOBOT 2000 </h1>
+        <%= link_to(image_tag("photobot.png", :alt => "PhotoBot2000"), root_path) %>
+        <%= link_to("PHOTOBOT 2000", root_path) %>
+	
       </header>
-    
+      
+      <% flash.each do |key, msg| %>
+    	<%= content_tag :div, msg, :class => [key, "flash notice"], :id => "notice_ #{key}" %>
+    	<%= content_tag :script, :type => "text/javascript" do -%>
+        setTimeout("new Effect.Fade('notice_<%= key %>');", 15000);
+    	<% end %>
+      <% end %>
+     
       <section>
         <%= yield %>
       </section>

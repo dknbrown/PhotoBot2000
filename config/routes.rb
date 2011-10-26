@@ -1,7 +1,10 @@
 Photobot2000::Application.routes.draw do
+  resources :contacts, :only => [:new, :create]
+
   get "pages/home"
 
-  get "pages/contact"
+
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

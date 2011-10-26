@@ -28,8 +28,8 @@ div.container
 .ui-accordion .ui-accordion-content-active { display: block; }
 
 
-h1 {
-        font: bold 72px "Century Schoolbook", Georgia, Times, serif;
+header {
+        font: bold 75px "Century Schoolbook", Georgia, Times, serif;
 	color: #333;
 	line-height: 90%;
 	margin: .2em 0 .4em 0;
@@ -42,8 +42,22 @@ h3 {
 	line-height: 90%;
 	margin: .2em 0 .4em 0;
 	letter-spacing: -2px;
+        border-style:solid;
+	border-bottom:thick dotted #000000;
+	border-width: 0px;
+	border-bottom-width: 1px;
+        outline:none;
+	clear:both;
+}
+h4{
+	font: bold 14px "Century Schoolbook", Georgia, Times, serif;
+	color: #333;
+	line-height: 90%;
+	margin: .2em 0 .4em 0;
+	letter-spacing: 0px;
         border-width: 0px;
         outline:none;
+	
 }
 p {
         color: #76879b;
@@ -51,6 +65,11 @@ p {
         margin: 5px;
         font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
         font-size: 11px;
+}
+img {
+         float: left;
+         padding: 5px;
+	 border:none;
 }
 
 img {
@@ -65,4 +84,26 @@ a:link              { color:#333; text-decoration:none; }
 a:visited           { color:#333; text-decoration:none; }
 a:hover             { color:#333; text-decoration:none; }
 a:active            { color:#333; text-decoration:none; }
+
+.flash {
+    text-align: center;
+    padding:    .3em .4em;
+    margin:             0 auto .5em;
+    clear:              both;
+    max-width:  46.923em; /* 610/13 */  
+    *max-width: 45.750em; /* 610/13.3333 - for IE */
+    
+}
+
+.flash.alert {
+    border: thin solid #8b0000;
+    background: #ffc0cb;
+    
+}
+
+.flash.notice, .flash.info {
+    border: thin solid #ff0;
+    background: #ffe;
+    
+}
 

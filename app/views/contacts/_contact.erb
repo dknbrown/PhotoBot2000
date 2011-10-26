@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-# app/views/supports/_form.html.erb
-<% form_for @support, :url => { :action => "create" }, :html => { :method => :post } do |f| %>
-=======
 <% form_for @contact, :url => { :action => "create" }, :html => { :method => :post } do |f| %>
->>>>>>> contact-form-mailer
   <p>
     <%= f.label "Name" %>
   </p>
@@ -17,19 +12,16 @@
     <%= f.text_field :email %>
   </p>
   <p>
-    <%= f.label "Type" %>
+    <%= f.label "Event Date" %>
   </p>
   <p>
-<<<<<<< HEAD
-    <%= f.select :support_type, options_for_select(["Bug", "Ask", "Idea"]) %>
+    <%= f.text_field :event_date %>
   </p>
   <p>
-=======
->>>>>>> contact-form-mailer
     <%= f.label "Details" %>
   </p>
   <p>
-    <%= f.text_area :content %>
+    <%= f.text_area( :content, :cols => 30, :rows => 10 ) %>
   </p>
   <p>
     <%= f.submit "Submit" %>
