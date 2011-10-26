@@ -72,14 +72,11 @@ img {
 	 border:none;
 }
 
-img {
+.icont {
          float: left;
          padding: 5px;
 }
-.obj_left{
-         float: left;
-         padding: 5px;
-}
+
 a:link              { color:#333; text-decoration:none; }
 a:visited           { color:#333; text-decoration:none; }
 a:hover             { color:#333; text-decoration:none; }
