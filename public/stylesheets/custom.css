@@ -46,6 +46,7 @@ header {
 	line-height: 90%;
 	margin: .2em 0 .4em 0;
 	letter-spacing: -2px;
+        float: left;
 }
 
 h3 {
