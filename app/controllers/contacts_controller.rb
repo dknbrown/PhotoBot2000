@@ -1,6 +1,7 @@
 class ContactsController < ApplicationController
 	
 	def new
+        @title = "Contact"
     	# id is required to deal with form
     	@contact = Contact.new(:id => 1)
   	end
