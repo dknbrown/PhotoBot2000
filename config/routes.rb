@@ -1,4 +1,6 @@
 Photobot2000::Application.routes.draw do
+  get "images/new"
+
   resources :contacts, :only => [:new, :create]
 
   get "pages/home"
