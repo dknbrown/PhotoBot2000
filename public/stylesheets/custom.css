@@ -1,12 +1,12 @@
 body {
-        background-image:url('/images/bgs/bubbles.jpg');
+        background-image:url('/images/bgs/bubbles1.jpg');
 	background-attachment: fixed;
 }
 div.container
 {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 50em;
+	max-width: 35em;
 
 	background-color: white;
 	background-color: rgba(255, 255, 255, 0.9);
@@ -41,14 +41,22 @@ div.container
 
 
 header {
-        font: bold 75px "Century Schoolbook", Georgia, Times, serif;
-	color: #333;
-	line-height: 90%;
-	margin: .2em 0 .4em 0;
-	letter-spacing: -2px;
-        float: left;
-}
 
+ font: bold 65px "Century Schoolbook", Georgia, Times, serif;
+ color: #333;
+ line-height: 90%;
+ margin: .2em 0 0 0;
+ letter-spacing: -2px;
+ float: left;
+
+}
+h2 {
+ font: bold 50px "Century Schoolbook", Georgia, Times, serif;
+ color: #333;
+ line-height: 90%;
+ margin: 0 0 .1em 0;
+ letter-spacing: -2px;
+}
 h3 {
         font: bold 24px "Century Schoolbook", Georgia, Times, serif;
 	color: #333;
