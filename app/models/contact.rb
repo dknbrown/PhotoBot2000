@@ -33,7 +33,7 @@ class Contact
  
   def save
     if self.valid?
-      Notifier.contact_request("photobot@gmail.com").deliver!
+      Notifier.contact_request(self).deliver!
       return true
     end
     return false
