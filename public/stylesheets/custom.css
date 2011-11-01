@@ -114,6 +114,7 @@ a.inner_link:visited           { color:#333; text-decoration:underline; }
 a.inner_link:hover             { color:#333; text-decoration:underline; }
 a.inner_link:active            { color:#333; text-decoration:underline; }
 
+
 .flash {
     text-align: center;
     padding:    .3em .4em;
