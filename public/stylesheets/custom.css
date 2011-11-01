@@ -1,6 +1,5 @@
 body {
-        background-image:url('/images/bgs/bubbles1.jpg');
-	background-attachment: fixed;
+        background-image:url('/images/plaid12.png');
 }
 div.container
 {
@@ -45,7 +44,7 @@ header {
 
  font: bold 65px "Century Schoolbook", Georgia, Times, serif;
  color: #333;
- line-height: 90%;
+ line-height: 80%;
  margin: .2em 0 0 0;
  letter-spacing: -2px;
  float: left;
@@ -110,6 +109,11 @@ a:visited           { color:#333; text-decoration:none; }
 a:hover             { color:#333; text-decoration:none; }
 a:active            { color:#333; text-decoration:none; }
 
+a.inner_link:link              { color:#333; text-decoration:underline; }
+a.inner_link:visited           { color:#333; text-decoration:underline; }
+a.inner_link:hover             { color:#333; text-decoration:underline; }
+a.inner_link:active            { color:#333; text-decoration:underline; }
+
 .flash {
     text-align: center;
     padding:    .3em .4em;
@@ -132,4 +136,4 @@ a:active            { color:#333; text-decoration:none; }
     
 }
 
-.
+
