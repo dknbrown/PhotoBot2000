@@ -103,7 +103,16 @@ img {
          float: left;
          padding: 5px; 
 }
+.lg_gallery {
+       margin-left: 75px;
+       margin-right: auto;
+       width: 100%;
+}
+.show {
+        float: left;
+        padding: 5px; 
 
+}
 
 a:link              { color:#333; text-decoration:none; }
 a:visited           { color:#333; text-decoration:none; }

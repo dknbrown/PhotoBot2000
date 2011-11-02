@@ -10,6 +10,10 @@ module ApplicationHelper
     end
   end
 
+  def image
+   "gallery/#{@image.name}.jpg"
+  end
+
 
 
 end

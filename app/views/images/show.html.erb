@@ -1,0 +1,11 @@
+<h3>Slide Show</h3>
+<div class="lg_gallery">
+<%= link_to(image_tag("arrows/left_arrow.png", :alt => "left_arrow", :class => "show"), 
+        image_path(if @image.id > @image_start then @image.id-1 else @image_size end)) %>
+
+<%= image_tag(image, :size => "500x400", :alt => "PhotoBot2001", :class => "show",) %>
+
+<%= link_to(image_tag("arrows/right_arrow.png", :alt => "right_arrow", :class => "show"),
+         image_path(if @image.id == @image_size then @image_start else @image.id+1 end)) %>
+</div>
+<h3><%= @image.id %></h3>

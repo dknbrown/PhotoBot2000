@@ -1,11 +1,21 @@
 require 'spec_helper'
 
 describe ImagesController do
+  render_views
 
-  describe "GET 'new'" do
+  before(:each) do
+    @image = Image.find(1)
+  end
+ 
+  describe "GET 'show" do
     it "should be successful" do
-      get 'new'
+      get :show, :id => @image
       response.should be_success
+    end
+
+    it "should find the right image" do
+      get :show, :id => @image
+      # @image.should == :id
     end
   end
 

@@ -1,13 +1,7 @@
-<%= image_tag("samples/samp1.jpg", :alt => "Sample", :class => "igallery") %>
-<%= image_tag("samples/samp2.jpg", :alt => "Sample", :class => "igallery") %>
-<%= image_tag("samples/samp3.jpg", :alt => "Sample", :class => "igallery") %>
-<br>
-<%= image_tag("samples/samp4.jpg", :alt => "Sample", :class => "igallery") %>
-<%= image_tag("samples/samp5.jpg", :alt => "Sample", :class => "igallery") %>
-<%= image_tag("samples/samp6.jpg", :alt => "Sample", :class => "igallery") %>
-<br>
-<%= image_tag("samples/samp8.jpg", :alt => "Sample", :class => "igallery") %>
-
-<%= image_tag("samples/samp15.jpg", :alt => "Sample", :class => "igallery") %>
-<%= image_tag("samples/samp16.jpg", :alt => "Sample", :class => "igallery") %>
-</p>
+<% (@image_all).each do |img| %>
+<%= link_to(image_tag("gallery/"+img.name+".jpg", 
+                        :size => "75x75", 
+                        :alt => "Sample", 
+                        :class => "igallery"),
+            image_path(img.id)) %>
+<% end %>
