@@ -98,7 +98,9 @@ img {
          float: left;
          padding: 5px;
 }
-
+.clear {
+clear:both;
+}
 .igallery {
          float: left;
          padding: 5px; 
